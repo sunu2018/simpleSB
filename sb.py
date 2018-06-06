@@ -1,24 +1,14 @@
 # -*- coding: utf-8 -*-
+from linepy import *
+import json, time, random
 
-import TOBY
-from TOBY.lib.curve.ttypes import *
-from datetime import datetime
-# from imgurpython import ImgurClient
-import time,random,sys,json,codecs,threading,glob,re
+client = LineClient()
+#client = LineClient(authToken=' EtU3tAWCo04h49vLprzf.4YSrMg2oNLZ3c2qS97Qi+W.5qn9sYT92TciRJFor34blO0PzFKS2nvV27WvWo/FfwY=')
+client.log("Auth Token : " + str(client.authToken))
 
-cl = TOBY.LINE()
-cl.login(tkoen="EtU3tAWCo04h49vLprzf.4YSrMg2oNLZ3c2qS97Qi+W.5qn9sYT92TciRJFor34blO0PzFKS2nvV27WvWo/FfwY=")
-cl.loginResult()
+channel = LineChannel(client)
+client.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-# client_id = ''
-# client_secret = ''
-# access_token = ''
-# refresh_token = ''
-
-# client = ImgurClient(client_id, client_secret, access_token, refresh_token)
-
-
-ki = kk = kc = cl 
 poll = LinePoll(client)
 
 cctv={
