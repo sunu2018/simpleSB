@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import TOBY.
+import TOBY
 from TOBY.lib.curve.ttypes import *
 from datetime import datetime
 # from imgurpython import ImgurClient
