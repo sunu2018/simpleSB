@@ -7,7 +7,7 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = TOBY.LINE()
-cl.login(qr=True)
+cl.login(tkoen="EtU3tAWCo04h49vLprzf.4YSrMg2oNLZ3c2qS97Qi+W.5qn9sYT92TciRJFor34blO0PzFKS2nvV27WvWo/FfwY=")
 cl.loginResult()
 
 # client_id = ''
