@@ -2,13 +2,19 @@
 from linepy import *
 import json, time, random
 
-client = LineClient()
-#client = LineClient(authToken='AUTH TOKEN')
-client.log("Auth Token : " + str(client.authToken))
+cl = TOBY.LINE()
+cl.login(qr=True)
+cl.loginResult()
 
-channel = LineChannel(client)
-client.log("Channel Access Token : " + str(channel.channelAccessToken))
+# client_id = ''
+# client_secret = ''
+# access_token = ''
+# refresh_token = ''
 
+# client = ImgurClient(client_id, client_secret, access_token, refresh_token)
+
+
+ki = kk = kc = cl 
 poll = LinePoll(client)
 
 cctv={
