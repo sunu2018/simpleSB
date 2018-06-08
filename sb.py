@@ -128,7 +128,7 @@ while True:
                                         nm5 += [nama[m]]
                                     client.mention(msg.to, nm5)             
                                 client.sendText(receiver, "Members :"+str(jml))
-                            elif text.lower() == 'ceksider':
+                            elif text.lower() == '*ห้อง':
                                 try:
                                     del cctv['point'][msg.to]
                                     del cctv['sidermem'][msg.to]
@@ -156,7 +156,7 @@ while True:
                                 pass
                             else:
                                 cctv['sidermem'][op.param1] += "\n~ " + Name
-                                pref=['eh ada','hai kak','aloo..','nah','lg ngapain','halo','sini kak']
+                                pref=['eh ada','เจ้าของห้อง กลุ่ม','aloo..','nah','lg ngapain','ชื่อห้อง','sini kak']
                                 client.sendText(op.param1, str(random.choice(pref))+' '+Name)
                         else:
                             pass
