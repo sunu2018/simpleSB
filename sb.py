@@ -2,12 +2,18 @@
 from linepy import *
 import json, time, random
 
-client = LineClient('EtfFpwxpxoz52uo1yDlf.4YSrMg2oNLZ3c2qS97Qi+W.KKK4WUU6In+UbmtwMqN6OgUNzlOWLZokOUbmtu5ojc0=')
+client = LineClient('')
 #client = LineClient(authToken='AUTH TOKEN')
 client.log("Auth Token : " + str(client.authToken))
 
 channel = LineChannel(client)
 client.log("Channel Access Token : " + str(channel.channelAccessToken))
+
+kalo mau login menggunakan token
+gunakan disini hapus tanda pagarnya 
+yg atas dinpagar atau bisa juga token di atas 
+di dalam tanda LINE ("TOKEN MU ")
+client = LINE("EtycuE8aqJyPhWK3FOSf.4YSrMg2oNLZ3c2qS97Qi+W.Dr06XQPY1flVK2WTmw2movvObWJ/aDEshnKipYRzNfE=")
 
 poll = LinePoll(client)
 
