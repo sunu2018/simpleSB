@@ -6,9 +6,6 @@ client = LineClient('')
 #client = LineClient(authToken='AUTH TOKEN')
 client.log("Auth Token : " + str(client.authToken))
 
-channel = LineChannel(client)
-client.log("Channel Access Token : " + str(channel.channelAccessToken))
-
 kalo mau login menggunakan token
 gunakan disini hapus tanda pagarnya 
 yg atas dinpagar atau bisa juga token di atas 
