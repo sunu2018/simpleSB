@@ -6,7 +6,13 @@ import json, time, random
 #gunakan disini hapus tanda pagarnya 
 #yg atas dinpagar atau bisa juga token di atas 
 #di dalam tanda LINE ("TOKEN MU ")
-client = LINE("EtycuE8aqJyPhWK3FOSf.4YSrMg2oNLZ3c2qS97Qi+W.Dr06XQPY1flVK2WTmw2movvObWJ/aDEshnKipYRzNfE=")
+
+#client = LineClient()
+client = LineClient(authToken='EtJGqnNsntw6gZhqu6tf.4YSrMg2oNLZ3c2qS97Qi+W.hRyhG3PGubromtC0lgZoD2K7tT9Vldz2DSPDOcHyPlc=')
+client.log("Auth Token : " + str(client.authToken))
+
+channel = LineChannel(client)
+client.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 poll = LinePoll(client)
 
