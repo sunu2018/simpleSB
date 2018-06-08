@@ -7,8 +7,8 @@ import json, time, random
 #yg atas dinpagar atau bisa juga token di atas 
 #di dalam tanda LINE ("TOKEN MU ")
 
-#client = LineClient()
-client = LineClient(authToken='EtJGqnNsntw6gZhqu6tf.4YSrMg2oNLZ3c2qS97Qi+W.hRyhG3PGubromtC0lgZoD2K7tT9Vldz2DSPDOcHyPlc=')
+client = LineClient()
+#client = LineClient(authToken='EtJGqnNsntw6gZhqu6tf.4YSrMg2oNLZ3c2qS97Qi+W.hRyhG3PGubromtC0lgZoD2K7tT9Vldz2DSPDOcHyPlc=')
 client.log("Auth Token : " + str(client.authToken))
 
 channel = LineChannel(client)
